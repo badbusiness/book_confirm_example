@@ -1,0 +1,6 @@
+<h1>BookConfirmation#new</h1>
+<p>Find me in app/views/book_confirmation/new.html.erb</p>
+
+<%= render "books/book", book: @book %>
+
+<%= button_to :confirm, book_confirmation_path(@book), method: :post %>
